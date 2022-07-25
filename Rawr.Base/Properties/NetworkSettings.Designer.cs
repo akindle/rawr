@@ -270,7 +270,7 @@ namespace Rawr.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://{0}.wowhead.com/?item={1}&xml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://{0}.wowhead.com/wotlk/item={1}&xml")]
         public string ItemWowheadURI {
             get {
                 return ((string)(this["ItemWowheadURI"]));
@@ -288,7 +288,7 @@ namespace Rawr.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://{0}.wowhead.com/?items&filter={1}")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://{0}.wowhead.com/wotlk/?items&filter={1}")]
         public string ItemWowheadUpgradeURI {
             get {
                 return ((string)(this["ItemWowheadUpgradeURI"]));

@@ -625,7 +625,7 @@ namespace Rawr.Warlock {
                 BonusManaPotion = stats.BonusManaPotion,                            //triggered when a mana pot is consumed
                 ThreatReductionMultiplier = stats.ThreatReductionMultiplier,        //Bracing Eathsiege Diamond (metagem) effect
                 ManaRestore = stats.ManaRestore,                                    //quite a few items that restore mana on spell cast or crit. Also used to model replenishment.
-                // SpellsManaReduction = stats.SpellsManaReduction,                    //spark of hope -> http://www.wowhead.com/?item=45703
+                // SpellsManaReduction = stats.SpellsManaReduction,                    //spark of hope -> http://www.wowhead.com/wotlk/item=45703
             };
 
             foreach (SpecialEffect effect in stats.SpecialEffects()) {
@@ -726,7 +726,7 @@ namespace Rawr.Warlock {
                 //these stats are listed here so that those items (which supply them) can be listed
                 //(these are terrible trinkets anyway - I should probably just remove them...)
                 + stats.HighestStat                     //darkmoon card: greatness
-                + stats.SpellsManaReduction             //spark of hope -> http://www.wowhead.com/?item=45703
+                + stats.SpellsManaReduction             //spark of hope -> http://www.wowhead.com/wotlk/item=45703
 
                 + stats.BonusManaPotion                 //triggered when a mana pot is consumed
                 + stats.ManaRestoreFromBaseManaPPM      //judgement of wisdom

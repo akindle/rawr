@@ -32,14 +32,12 @@ namespace Rawr
             this.buttonCancel = new System.Windows.Forms.Button();
             this.textItemId = new System.Windows.Forms.TextBox();
             this.lblTextAddItemID = new System.Windows.Forms.Label();
-            this.cbArmory = new System.Windows.Forms.CheckBox();
-            this.cbWowhead = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // buttonOK
             // 
             this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonOK.Location = new System.Drawing.Point(172, 90);
+            this.buttonOK.Location = new System.Drawing.Point(172, 65);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(75, 23);
             this.buttonOK.TabIndex = 0;
@@ -49,7 +47,7 @@ namespace Rawr
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(91, 90);
+            this.buttonCancel.Location = new System.Drawing.Point(91, 65);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 5;
@@ -72,39 +70,13 @@ namespace Rawr
             this.lblTextAddItemID.Text = "Enter the Item ID, Item Name, or Database Link (Wowhead, Thottbot):";
             this.lblTextAddItemID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cbArmory
-            // 
-            this.cbArmory.AutoSize = true;
-            this.cbArmory.Checked = true;
-            this.cbArmory.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbArmory.Location = new System.Drawing.Point(49, 66);
-            this.cbArmory.Name = "cbArmory";
-            this.cbArmory.Size = new System.Drawing.Size(58, 17);
-            this.cbArmory.TabIndex = 3;
-            this.cbArmory.Text = "Armory";
-            this.cbArmory.UseVisualStyleBackColor = true;
-            // 
-            // cbWowhead
-            // 
-            this.cbWowhead.AutoSize = true;
-            this.cbWowhead.Checked = true;
-            this.cbWowhead.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbWowhead.Location = new System.Drawing.Point(135, 66);
-            this.cbWowhead.Name = "cbWowhead";
-            this.cbWowhead.Size = new System.Drawing.Size(75, 17);
-            this.cbWowhead.TabIndex = 4;
-            this.cbWowhead.Text = "Wowhead";
-            this.cbWowhead.UseVisualStyleBackColor = true;
-            // 
             // FormEnterId
             // 
             this.AcceptButton = this.buttonOK;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(259, 122);
+            this.ClientSize = new System.Drawing.Size(259, 95);
             this.Controls.Add(this.textItemId);
-            this.Controls.Add(this.cbWowhead);
-            this.Controls.Add(this.cbArmory);
             this.Controls.Add(this.lblTextAddItemID);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);
@@ -124,7 +96,5 @@ namespace Rawr
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.TextBox textItemId;
         private System.Windows.Forms.Label lblTextAddItemID;
-        private System.Windows.Forms.CheckBox cbArmory;
-        private System.Windows.Forms.CheckBox cbWowhead;
     }
 }

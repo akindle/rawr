@@ -227,9 +227,9 @@ namespace Rawr.UI
         private void OpenInWowhead(object sender, RoutedEventArgs e)
         {
 #if SILVERLIGHT
-            System.Windows.Browser.HtmlPage.Window.Navigate(new Uri("http://www.wowhead.com/?item=" + ItemInstance.Id), "_blank");
+            System.Windows.Browser.HtmlPage.Window.Navigate(new Uri("http://www.wowhead.com/wotlk/item=" + ItemInstance.Id), "_blank");
 #else
-            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("http://www.wowhead.com/?item=" + SelectedItemInstance.Id));
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("http://www.wowhead.com/wotlk/item=" + SelectedItemInstance.Id));
 #endif
         }
 

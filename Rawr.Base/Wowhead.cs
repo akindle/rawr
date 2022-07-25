@@ -2052,6 +2052,7 @@ namespace Rawr
                     return ItemSlot.Meta;
                 case "2":
                     return ItemSlot.Red;
+                case "3":
                 case "4":
                     return ItemSlot.Yellow;
                 case "6":
@@ -2711,7 +2712,7 @@ namespace Rawr
 
         public static String GetWowheadWeightedReportURL(Character character)
         {
-            return "http://www.wowhead.com/?items&filter=minrl=" + character.Level + ";" + getWowheadClassFilter(character.Class) + getWowheadWeightFilter(character);
+            return "http://www.wowhead.com/wotlk/?items&filter=minrl=" + character.Level + ";" + getWowheadClassFilter(character.Class) + getWowheadWeightFilter(character);
         }
 
         private static string getWowheadClassFilter(CharacterClass className)

@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Rawr.TankDK</RootNamespace>
     <AssemblyName>Rawr.TankDK</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>%24/Rawr/Rawr.TankDK</SccProjectName>
     <SccLocalPath>.</SccLocalPath>

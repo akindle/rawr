@@ -21,7 +21,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <StartupObject>Rawr.Program</StartupObject>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -549,11 +549,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DefaultDataFiles\BuffSets.xml" />
-    <Content Include="DefaultDataFiles\ItemCache.xml" />
-    <Content Include="DefaultDataFiles\ItemFilter.xml" />
-    <Content Include="DefaultDataFiles\ItemSource.xml" />
-    <Content Include="DefaultDataFiles\Talents.xml" />
+    <Content Include="Data\BuffSets.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\ItemCache.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\ItemFilter.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\ItemSource.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Talents.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="RawrIcon.ico" />
     <None Include="BatchTools.datasource" />
     <None Include="ItemFilterRegex.datasource" />

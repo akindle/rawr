@@ -45,9 +45,9 @@ namespace Rawr.Properties
             _default.ProxyRequiresAuthentication = false;
             _default.UseDefaultAuthenticationForProxy = false;
             _default.ProxyDomain = "";
-            _default.ItemWowheadURI = "http://{0}.wowhead.com/?item={1}&xml";
+            _default.ItemWowheadURI = "https://{0}.wowhead.com/wotlk/item={1}&xml";
             _default.ItemSearchURI = "Armory.php?{0}*search.xml*searchQuery={1}&searchType=items";//"http://{0}.wowarmory.com/search.xml?searchQuery={1}&searchType=items";
-            _default.ItemWowheadUpgradeURI = "http://{0}.wowhead.com/?items&filter={1}";
+            _default.ItemWowheadUpgradeURI = "https://{0}.wowhead.com/wotlk/?items&filter={1}";
             _default.ArmoryTalentIconURI = "http://www.wowarmory.com/wow-icons/_images/_talents43x43/{0}";
 
         }

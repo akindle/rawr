@@ -433,7 +433,7 @@ namespace Rawr
             XmlDocument doc = null;
             if (!string.IsNullOrEmpty(id))
             {
-                doc = DownloadXml(string.Format("http://www.wowhead.com/?item={0}", id), true, true);
+                doc = DownloadXml(string.Format("http://www.wowhead.com/wotlk/item={0}", id), true, true);
             }
             return doc;
         }
@@ -668,6 +668,11 @@ namespace Rawr
 		/// <param name="localPath">local path, including file name,  where the downloaded file will be saved</param>
 		private void DownloadFile(string URI, string localPath, string contentType)
 		{
+            if (URI.Contains("wowarmory"))
+            {
+                return;
+            }
+
 			int retry = 0;
 			bool success = false;
             //occasionally a zero byte file slips through without throwing an exception
@@ -737,7 +742,8 @@ namespace Rawr
 		public string DownloadText(string URI)
 		{
 			WebClient webClient = CreateWebClient();
-			string value = null;
+            var client = new System.Net.Http.HttpClient();
+            string value = null;
 			int retry = 0;
 			bool success = false;
 			do
@@ -745,8 +751,8 @@ namespace Rawr
 				if (!LastWasFatalError)
 				{
 					try
-					{
-						value = webClient.DownloadString(URI);
+                    {
+                        value = client.GetStringAsync(URI).Result;
 						if (!String.IsNullOrEmpty(value))
 						{
 							success = true;

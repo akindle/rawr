@@ -845,18 +845,18 @@ namespace Rawr.HealPriest
 
         // Trinket Status:
         // Correctly implemented:
-        // http://www.wowhead.com/?item=40382 - Soul of the Dead
+        // http://www.wowhead.com/wotlk/item=40382 - Soul of the Dead
         
         // Wrongly implemented:
-        // http://www.wowhead.com/?item=37835 - Je'Tze's Bell
+        // http://www.wowhead.com/wotlk/item=37835 - Je'Tze's Bell
 
         // Not implemented:
-        // http://www.wowhead.com/?item=44253 - Darkmoon Card: Greatness (But for 90 spi/90 int versions, not yet known)
-        // http://www.wowhead.com/?item=42988 - Darkmoon Card: Illusion
-        // http://www.wowhead.com/?item=40258 - Forethought Talisman
-        // http://www.wowhead.com/?item=40432 - Illustration of the Dragon Soul
-        // http://www.wowhead.com/?item=40532 - Living Ice Crystals
-        // http://www.wowhead.com/?item=40430 - Majestic Dragon Figurine
+        // http://www.wowhead.com/wotlk/item=44253 - Darkmoon Card: Greatness (But for 90 spi/90 int versions, not yet known)
+        // http://www.wowhead.com/wotlk/item=42988 - Darkmoon Card: Illusion
+        // http://www.wowhead.com/wotlk/item=40258 - Forethought Talisman
+        // http://www.wowhead.com/wotlk/item=40432 - Illustration of the Dragon Soul
+        // http://www.wowhead.com/wotlk/item=40532 - Living Ice Crystals
+        // http://www.wowhead.com/wotlk/item=40430 - Majestic Dragon Figurine
 
         protected bool _HasRelevantStats(Stats stats)
         {

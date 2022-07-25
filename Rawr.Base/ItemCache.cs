@@ -594,7 +594,7 @@ namespace Rawr
 		//private void UpdateArmorFromWowhead(Item item)
 		//{
 		//    WebRequestWrapper wrw = new WebRequestWrapper();
-		//    string wowheadXml = wrw.DownloadText(string.Format("http://wotlk.wowhead.com/?item={0}&xml", item.Id));
+		//    string wowheadXml = wrw.DownloadText(string.Format("http://www.wowhead.com/wotlk/item={0}&xml", item.Id));
 		//    wowheadXml = wowheadXml.Substring(0, wowheadXml.LastIndexOf(" Armor<"));
 		//    wowheadXml = wowheadXml.Substring(wowheadXml.LastIndexOf('>')+1);
 		//    item.Stats.Armor = int.Parse(wowheadXml);

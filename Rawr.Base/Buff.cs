@@ -2529,66 +2529,7 @@ namespace Rawr
 
             #region Druid
             #region TBC
-            /*
-            #region Tier 4 | Malorne
-            #region Harness
-            defaultBuffs.Add(new Buff()
-            {
-                Name = "Malorne Harness 2 Piece Bonus",
-                Group = "Set Bonuses",
-                ConflictingBuffs = new List<string>(new string[] { }),
-                Stats = { BloodlustProc = 0.8f },
-                SetName = "Malorne Harness",
-                SetThreshold = 2,
-                AllowedClasses = new List<CharacterClass>() { CharacterClass.Druid, },
-            });
-            defaultBuffs.Add(new Buff()
-            {
-                Name = "Malorne Harness 4 Piece Bonus",
-                Group = "Set Bonuses",
-                ConflictingBuffs = new List<string>(new string[] { }),
-                Stats = { BonusArmor = 1400, CatFormStrength = 30 },
-                SetName = "Malorne Harness",
-                SetThreshold = 4,
-                AllowedClasses = new List<CharacterClass>() { CharacterClass.Druid },
-            });
-            #endregion
-            #region Raiment
-            defaultBuffs.Add( buff = new Buff()
-            {
-                Name = "Malorne Raiment 2 Piece",
-                Group = "Set Bonuses",
-                ConflictingBuffs = new List<string>(new string[] { }),
-                Stats = { ManaRestoreOnCast_5_15 = 120 },
-                SetName = "Malorne Raiment",
-                SetThreshold = 2,
-                AllowedClasses = new List<CharacterClass>() { CharacterClass.Druid, },
-            });
-            buff.Stats.AddSpecialEffect(new SpecialEffect(Trigger.HealingSpellCast, new Stats() { ManaRestore = 120f }, 0f, 0f, 0.05f));
-            #endregion
-            #region Regalia
-            defaultBuffs.Add(buff = new Buff()
-            {
-                Name = "Malorne Regalia 2 Piece Bonus",
-                Group = "Set Bonuses",
-                ConflictingBuffs = new List<string>(new string[] { }),
-                SetName = "Malorne Regalia",
-                SetThreshold = 2,
-                AllowedClasses = new List<CharacterClass>() { CharacterClass.Druid, },
-            });
-            buff.Stats.AddSpecialEffect(new SpecialEffect(Trigger.DamageSpellCast, new Stats() { Mana = 120f }, 0f, 0f, 0.1f, 1));
-            defaultBuffs.Add(new Buff()
-            {
-                Name = "Malorne Regalia 4 Piece Bonus",
-                Group = "Set Bonuses",
-                ConflictingBuffs = new List<string>(new string[] { }),
-                Stats = { InnervateCooldownReduction = 48.0f },
-                SetName = "Malorne Regalia",
-                SetThreshold = 4,
-                AllowedClasses = new List<CharacterClass>() { CharacterClass.Druid, },
-            });
-            #endregion
-            #endregion
+
             #region Tier 5 | Nordrassil
             #region Harness
             defaultBuffs.Add(new Buff()
@@ -2600,27 +2541,6 @@ namespace Rawr
                 SetName = "Nordrassil Harness",
                 SetThreshold = 4,
                 AllowedClasses = new List<CharacterClass>() { CharacterClass.Druid },
-            });
-            #endregion
-            #region Raiment
-            defaultBuffs.Add(new Buff()
-            {
-                Name = "Nordrassil Raiment 2 Piece",
-                Group = "Set Bonuses",
-                ConflictingBuffs = new List<string>(new string[] { }),
-                Stats = { RegrowthExtraTicks = 2 },
-                SetName = "Nordrassil Raiment",
-                SetThreshold = 2
-            });
-            defaultBuffs.Add(new Buff()
-            {
-                Name = "Nordrassil Raiment 4 Piece",
-                Group = "Set Bonuses",
-                ConflictingBuffs = new List<string>(new string[] { }),
-                Stats = { LifebloomFinalHealBonus = 150 },
-                SetName = "Nordrassil Raiment",
-                SetThreshold = 4,
-                AllowedClasses = new List<CharacterClass>() { CharacterClass.Druid, },
             });
             #endregion
             #region Regalia
@@ -2637,40 +2557,6 @@ namespace Rawr
             #endregion
             #endregion
             #region Tier 6 | Thunderheart
-            #region Harness
-            defaultBuffs.Add(new Buff()
-            {
-                Name = "Thunderheart Harness 2 Piece Bonus",
-                Group = "Set Bonuses",
-                ConflictingBuffs = new List<string>(new string[] { }),
-                Stats = { MangleCatCostReduction = 5, BonusMangleBearThreat = 0.15f },
-                SetName = "Thunderheart Harness",
-                SetThreshold = 2,
-                AllowedClasses = new List<CharacterClass>() { CharacterClass.Druid },
-            });
-            defaultBuffs.Add(new Buff()
-            {
-                Name = "Thunderheart Harness 4 Piece Bonus",
-                Group = "Set Bonuses",
-                ConflictingBuffs = new List<string>(new string[] { }),
-                Stats = { BonusRipDamageMultiplier = .15f, BonusFerociousBiteDamageMultiplier = .15f, BonusSwipeDamageMultiplier = .15f },
-                SetName = "Thunderheart Harness",
-                SetThreshold = 4,
-                AllowedClasses = new List<CharacterClass>() { CharacterClass.Druid },
-            });
-            #endregion
-            #region Raiment
-            defaultBuffs.Add(new Buff()
-            {
-                Name = "Thunderheart Raiment 4 Piece",
-                Group = "Set Bonuses",
-                ConflictingBuffs = new List<string>(new string[] { }),
-                Stats = { BonusHealingTouchMultiplier = 0.05f },
-                SetName = "Thunderheart Raiment",
-                SetThreshold = 4,
-                AllowedClasses = new List<CharacterClass>() { CharacterClass.Druid, },
-            });
-            #endregion
             #region Regalia
             defaultBuffs.Add(new Buff()
             {
@@ -2694,7 +2580,7 @@ namespace Rawr
             });
             #endregion
             #endregion
- */
+ 
             #endregion
             #region WotLK
             #region Tier  7 | Dreamwalker

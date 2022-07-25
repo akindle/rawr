@@ -437,7 +437,7 @@ namespace Rawr
                 else
                     site = "www";
             }
-            Help.ShowHelp(null, "http://" + site + ".wowhead.com/?item=" + _item.Id);
+            Help.ShowHelp(null, "http://" + site + ".wowhead.com/wotlk/item=" + _item.Id);
 		}
         void _menuItemArmory_Click(object sender, EventArgs e)
         {

@@ -72,13 +72,13 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="ItemWowheadURI" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">http://{0}.wowhead.com/?item={1}&amp;xml</Value>
+      <Value Profile="(Default)">https://{0}.wowhead.com/wotlk/item={1}&amp;xml</Value>
     </Setting>
     <Setting Name="ItemSearchURI" Type="System.String" Scope="Application">
       <Value Profile="(Default)">http://{0}.wowarmory.com/search.xml?searchQuery={1}&amp;searchType=items</Value>
     </Setting>
     <Setting Name="ItemWowheadUpgradeURI" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">http://{0}.wowhead.com/?items&amp;filter={1}</Value>
+      <Value Profile="(Default)">https://{0}.wowhead.com/wotlk/?items&amp;filter={1}</Value>
     </Setting>
     <Setting Name="ArmoryTalentIconURI" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://www.wowarmory.com/wow-icons/_images/_talents31x31/{0}</Value>

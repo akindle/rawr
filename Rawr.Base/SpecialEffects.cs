@@ -2019,7 +2019,7 @@ namespace Rawr {
                     stats.ManacostReduceWithin15OnUse1Min += (float)int.Parse(m.Groups["mana"].Value);
                 }
             }*/
-            else if (line.StartsWith("Tap into the power of the skull, increasing haste rating by 175 for 20 sec"))
+            else if (line.StartsWith("Tap into the power of the skull, increasing haste rating by 175 for 20 sec") || line.StartsWith("Tap into the power of the skull, increasing spell haste rating by 175 for 20 sec"))
             {
                 // The Skull of Gul'dan
                 stats.AddSpecialEffect(new SpecialEffect(Trigger.Use, new Stats() { HasteRating = 175 }, 20.0f, 120.0f));

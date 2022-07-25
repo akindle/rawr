@@ -918,7 +918,7 @@ namespace Rawr
 		}
 
 
-		public static Item LoadFromId(int id) { return LoadFromId(id, false, true, false); }
+		public static Item LoadFromId(int id) { return LoadFromId(id, false, true, true); }
         public static Item LoadFromId(int id, bool forceRefresh, bool raiseEvent, bool useWowhead) { return LoadFromId(id, forceRefresh, raiseEvent, useWowhead, Rawr.Properties.GeneralSettings.Default.Locale); }
         public static Item LoadFromId(int id, bool forceRefresh, bool raiseEvent, bool useWowhead, string locale) { return LoadFromId(id, forceRefresh, raiseEvent, useWowhead, locale, "www"); }
         public static Item LoadFromId(int id, bool forceRefresh, bool raiseEvent, bool useWowhead, string locale, string wowheadSite)

@@ -371,9 +371,9 @@ namespace Rawr
 					WebRequestWrapper.ResetFatalErrorIndicator();
                     int itemId = form.Value;
                     if (itemId > 0)
-					    AddItemById(form.Value, form.UseArmory, form.UseWowhead);
+					    AddItemById(form.Value);
                     else
-                        AddItemByName(form.ItemName, form.UseArmory, form.UseWowhead);
+                        AddItemByName(form.ItemName);
 				}
 				finally
 				{
@@ -383,35 +383,22 @@ namespace Rawr
             form.Dispose();
 		}
 
-        private void AddItemByName(string name, bool useArmory, bool useWowhead)
+        private void AddItemByName(string name)
         {
             Item newItem = null;
 
             // ignore empty strings
             if (name.Length <= 0) return;
 
-            // try the armory (if requested)
-            if (useArmory)
+            
+            // make sure we don't get some bad input that is going to mess with our gem info passing
+            if (!name.Contains("."))
             {
-                Int32 item_id = Armory.GetItemIdByName(name);
-                if (item_id > 0)
-                {
-                    newItem = Item.LoadFromId(item_id, true, true, false);
-                }
-            }
-
-            // try wowhead (if requested)
-            if ((newItem == null) && useWowhead)
-            {
-                // make sure we don't get some bad input that is going to mess with our gem info passing
-                if (!name.Contains("."))
-                {
-                    // need to add + where the spaces are
-                    string wowhead_name = name.Replace(' ', '+');
-                    // we can now pass it through the normal URI
-                    newItem = Wowhead.GetItem(wowhead_name + ".0.0.0", true);
-                    if (newItem != null) ItemCache.AddItem(newItem, true);
-                }
+                // need to add + where the spaces are
+                string wowhead_name = name.Replace(' ', '+');
+                // we can now pass it through the normal URI
+                newItem = Wowhead.GetItem(wowhead_name + ".0.0.0", true);
+                if (newItem != null) ItemCache.AddItem(newItem, true);
             }
 
             if (newItem == null)
@@ -424,31 +411,19 @@ namespace Rawr
             }
         }
 
-		private void AddItemById(int id, bool useArmory, bool useWowhead) { AddItemsById(new int[] { id }, useArmory, useWowhead); }
-        private void AddItemsById(int[] ids, bool useArmory, bool useWowhead)
+		private void AddItemById(int id) { AddItemsById(new int[] { id }); }
+        private void AddItemsById(int[] ids)
 		{
 			foreach (int id in ids)
             {
                 Item newItem = null;
 
-                // try the armory (if requested)
-                if (useArmory)
-                {
-                    newItem = Item.LoadFromId(id, true, true, false);
-                }
 
                 // try wowhead (if requested)
-                if ((newItem == null) && useWowhead)
-                {
-                    newItem = Wowhead.GetItem(id.ToString(), true);
-                    if (newItem != null) ItemCache.AddItem(newItem, true);
-                }
-                if ((newItem == null) && useWowhead)
-                {
-                    newItem = Wowhead.GetItem("ptr", id.ToString(), true);
-                    if (newItem != null) ItemCache.AddItem(newItem, true);
-                }
-
+                
+                newItem = Wowhead.GetItem(id.ToString(), true);
+                if (newItem != null) ItemCache.AddItem(newItem, true);
+                
                 if (newItem == null)
                 {
 					if (MessageBox.Show("Unable to load item " + id.ToString() + ". Would you like to create the item blank and type in the values yourself?", "Item not found. Create Blank?", MessageBoxButtons.YesNo) == DialogResult.Yes)

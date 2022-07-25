@@ -53,16 +53,6 @@ namespace Rawr
             get { return textItemId.Text; }
         }
 
-		public bool UseArmory
-		{
-			get { return cbArmory.Checked; }
-		}
-
-        public bool UseWowhead
-        {
-            get { return cbWowhead.Checked; }
-        }
-
         public FormEnterId()
         {
             InitializeComponent();
