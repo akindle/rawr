@@ -1088,6 +1088,32 @@
   </Item>
   <Item>
     <ItemLevel>164</ItemLevel>
+    <DisplayId>48020</DisplayId>
+    <DisplaySlot>1</DisplaySlot>
+    <IconPath>inv_helmet_126</IconPath>
+    <Stats>
+      <Armor>418</Armor>
+      <Agility>43</Agility>
+      <Stamina>57</Stamina>
+      <AttackPower>126</AttackPower>
+      <HitRating>30</HitRating>
+      <HasteRating>34</HasteRating>
+    </Stats>
+    <Quality>Epic</Quality>
+    <Type>Leather</Type>
+    <Faction>Neutral</Faction>
+    <Bind>BoP</Bind>
+    <SocketColor1>Meta</SocketColor1>
+    <SocketColor2>Red</SocketColor2>
+    <SocketBonus>
+      <HitRating>4</HitRating>
+    </SocketBonus>
+    <Name>Duplicitous Guise</Name>
+    <Id>34244</Id>
+    <Slot>Head</Slot>
+  </Item>
+  <Item>
+    <ItemLevel>164</ItemLevel>
     <DisplayId>48031</DisplayId>
     <DisplaySlot>21</DisplaySlot>
     <IconPath>inv_weapon_shortblade_73</IconPath>

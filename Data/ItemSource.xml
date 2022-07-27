@@ -120516,4 +120516,19 @@
       </ArrayOfItemLocation>
     </value>
   </item>
+  <item>
+    <key>
+      <string>34244</string>
+    </key>
+    <value>
+      <ArrayOfItemLocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <ItemLocation xsi:type="StaticDrop">
+          <Area>Sunwell Plateau (25)</Area>
+          <Heroic>false</Heroic>
+          <Boss>Kil'jaeden</Boss>
+        </ItemLocation>
+        <ItemLocation xsi:nil="true" />
+      </ArrayOfItemLocation>
+    </value>
+  </item>
 </dictionary>
