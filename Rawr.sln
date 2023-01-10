@@ -1,5 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BFCA06A8-B40B-4A80-B76F-BA2722AB555A}"
 	ProjectSection(SolutionItems) = preProject
 		Rawr.vsmdi = Rawr.vsmdi
@@ -71,84 +73,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rawr.Hunter", "Rawr.Hunter\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rawr.Warlock", "Rawr.Warlock\Rawr.Warlock.csproj", "{831C14AA-4AD0-46BB-87DE-A284428D2FE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rawr.Console", "Rawr.Console\Rawr.Console.csproj", "{C31C8C41-34FE-45D9-95C6-9C269DF12FE4}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 24
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs03
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Rawr.csproj
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = Rawr.Base\\Rawr.Base.csproj
-		SccProjectName2 = Rawr.Base
-		SccLocalPath2 = Rawr.Base
-		SccProjectUniqueName3 = Rawr.Cat\\Rawr.Cat.csproj
-		SccProjectName3 = Rawr.Cat
-		SccLocalPath3 = Rawr.Cat
-		SccProjectUniqueName4 = Rawr.Bear\\Rawr.Bear.csproj
-		SccProjectName4 = Rawr.Bear
-		SccLocalPath4 = Rawr.Bear
-		SccProjectUniqueName5 = Rawr.Mage\\Rawr.Mage.csproj
-		SccProjectName5 = Rawr.Mage
-		SccLocalPath5 = Rawr.Mage
-		SccProjectUniqueName6 = Rawr.Moonkin\\Rawr.Moonkin.csproj
-		SccProjectName6 = Rawr.Moonkin
-		SccLocalPath6 = Rawr.Moonkin
-		SccProjectUniqueName7 = Rawr.Rogue\\Rawr.Rogue.csproj
-		SccProjectName7 = Rawr.Rogue
-		SccLocalPath7 = Rawr.Rogue
-		SccProjectUniqueName8 = Rawr.Healadin\\Rawr.Healadin.csproj
-		SccProjectName8 = Rawr.Healadin
-		SccLocalPath8 = Rawr.Healadin
-		SccProjectUniqueName9 = Rawr.Retribution\\Rawr.Retribution.csproj
-		SccProjectName9 = Rawr.Retribution
-		SccLocalPath9 = Rawr.Retribution
-		SccProjectUniqueName10 = Rawr.ProtWarr\\Rawr.ProtWarr.csproj
-		SccProjectName10 = Rawr.ProtWarr
-		SccLocalPath10 = Rawr.ProtWarr
-		SccProjectUniqueName11 = Rawr.DPSWarr\\Rawr.DPSWarr.csproj
-		SccProjectName11 = Rawr.DPSWarr
-		SccLocalPath11 = Rawr.DPSWarr
-		SccProjectUniqueName12 = Rawr.Tree\\Rawr.Tree.csproj
-		SccProjectName12 = Rawr.Tree
-		SccLocalPath12 = Rawr.Tree
-		SccProjectUniqueName13 = Rawr.Hunter\\Rawr.Hunter.csproj
-		SccProjectName13 = Rawr.Hunter
-		SccLocalPath13 = Rawr.Hunter
-		SccProjectUniqueName14 = Rawr.RestoSham\\Rawr.RestoSham.csproj
-		SccProjectName14 = Rawr.RestoSham
-		SccLocalPath14 = Rawr.RestoSham
-		SccProjectUniqueName15 = Rawr.HealPriest\\Rawr.HealPriest.csproj
-		SccProjectName15 = Rawr.HealPriest
-		SccLocalPath15 = Rawr.HealPriest
-		SccProjectUniqueName16 = Rawr.DPSDK\\Rawr.DPSDK.csproj
-		SccProjectName16 = Rawr.DPSDK
-		SccLocalPath16 = Rawr.DPSDK
-		SccProjectUniqueName17 = Rawr.ShadowPriest\\Rawr.ShadowPriest.csproj
-		SccProjectName17 = Rawr.ShadowPriest
-		SccLocalPath17 = Rawr.ShadowPriest
-		SccProjectUniqueName18 = Rawr.Enhance\\Rawr.Enhance.csproj
-		SccProjectName18 = Rawr.Enhance
-		SccLocalPath18 = Rawr.Enhance
-		SccProjectUniqueName19 = Rawr.Elemental\\Rawr.Elemental.csproj
-		SccProjectName19 = Rawr.Elemental
-		SccLocalPath19 = Rawr.Elemental
-		SccProjectUniqueName20 = Rawr.TankDK\\Rawr.TankDK.csproj
-		SccProjectName20 = Rawr.TankDK
-		SccLocalPath20 = Rawr.TankDK
-		SccProjectUniqueName21 = Rawr.ProtPaladin\\Rawr.ProtPaladin.csproj
-		SccProjectName21 = Rawr.ProtPaladin
-		SccLocalPath21 = Rawr.ProtPaladin
-		SccProjectUniqueName22 = Rawr.UnitTests\\Rawr.UnitTests.csproj
-		SccProjectName22 = Rawr.UnitTests
-		SccLocalPath22 = Rawr.UnitTests
-		SccProjectUniqueName23 = Rawr.Warlock\\Rawr.Warlock.csproj
-		SccProjectName23 = Rawr.Warlock
-		SccLocalPath23 = Rawr.Warlock
-	EndGlobalSection
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = Rawr.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
@@ -333,8 +260,22 @@ Global
 		{831C14AA-4AD0-46BB-87DE-A284428D2FE0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{831C14AA-4AD0-46BB-87DE-A284428D2FE0}.Release|x86.ActiveCfg = Release|x86
 		{831C14AA-4AD0-46BB-87DE-A284428D2FE0}.Release|x86.Build.0 = Release|x86
+		{C31C8C41-34FE-45D9-95C6-9C269DF12FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C31C8C41-34FE-45D9-95C6-9C269DF12FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C31C8C41-34FE-45D9-95C6-9C269DF12FE4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C31C8C41-34FE-45D9-95C6-9C269DF12FE4}.Debug|x86.Build.0 = Debug|Any CPU
+		{C31C8C41-34FE-45D9-95C6-9C269DF12FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C31C8C41-34FE-45D9-95C6-9C269DF12FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C31C8C41-34FE-45D9-95C6-9C269DF12FE4}.Release|x86.ActiveCfg = Release|Any CPU
+		{C31C8C41-34FE-45D9-95C6-9C269DF12FE4}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57FC9639-D65E-4B31-B67A-65E4315CC0C9}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Rawr.vsmdi
 	EndGlobalSection
 EndGlobal
